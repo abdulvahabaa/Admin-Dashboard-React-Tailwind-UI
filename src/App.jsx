@@ -6,7 +6,6 @@ import Main from "./ui/Main";
 import Content from "./ui/Content";
 import Stats from "./components/Stats/Stats";
 
-
 export const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [isSidebarOpen, setisSidebarOpen] = useState(false);
@@ -27,14 +26,14 @@ export const App = () => {
         toggleSidebar={toggleSidebar}
       />
       <Sidebar isSidebarOpen={isSidebarOpen} />
-      <Main >
+      <Main>
         <Content>
           <Stats darkMode={darkMode} />
 
           <divc className="flex flex-col gap-3 lg:flex-row"></divc>
         </Content>
         <Profile />
-     </Main>
+      </Main>
     </div>
   );
 };

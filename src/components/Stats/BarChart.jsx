@@ -89,14 +89,16 @@ const BarChart = ({ darkMode }) => {
     },
   };
 
-    return <div>
-    <Chart
-      options={chartConfig.options}
-      series={chartConfig.series}
-      type="bar"
-      height={240}
-    />
-  </div>;
+  return (
+    <div>
+      <Chart
+        options={chartConfig.options}
+        series={chartConfig.series}
+        type="bar"
+        height={240}
+      />
+    </div>
+  );
 };
 
 export default BarChart;

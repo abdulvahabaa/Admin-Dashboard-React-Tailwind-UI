@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Profile from "./components/Profile/Profile";
 import Main from "./ui/Main";
 import Content from "./ui/Content";
+import Stats from "./components/Stats/Stats";
 
 
 export const App = () => {
@@ -28,7 +29,9 @@ export const App = () => {
       <Sidebar isSidebarOpen={isSidebarOpen} />
       <Main >
         <Content>
-          Main Content
+          <Stats darkMode={darkMode} />
+
+          <divc className="flex flex-col gap-3 lg:flex-row"></divc>
         </Content>
         <Profile />
      </Main>
